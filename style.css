@@ -29,7 +29,7 @@ header {
   overflow: hidden;
   background-color: #0074c2a6;
   transition: height .5s;
-  font-size: medium;
+  font-size: 48 / 750 * 100vw;
   font-weight: bold;
   font-family: 'Zen Maru Gothic', sans-serif;
 }
@@ -58,7 +58,7 @@ section {
   padding: 30px 30px;
   background-color: #bbe2f1 ;
   border-radius: 80px;
-  font-size: medium;
+  font-size: 48 / 750 * 100vw;
   text-align: center;
   color: #7b5544 ;
   font-family: 'Zen Maru Gothic', sans-serif;
@@ -68,12 +68,12 @@ section {
 article {
   margin: auto;
   width:90%;
-  height: 400px;
+  /*height: 400px;*/
   background: #ffffff;
   /* flex: 3; */
   display: flex;
   flex-wrap: wrap;
-  height: 600px;
+  /*height: 600px; */
   font-size: medium;
   color: #7b5544;
   font-family: 'Zen Maru Gothic', sans-serif;
@@ -230,6 +230,18 @@ label {
   background: url(image/A@2x.png) no-repeat center;
   background-size: contain;
 }
+
+.section2 {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  padding: 40px 40px;
+  background-color: #ebf6f7 ;
+  border-radius: 90px;
+  font-size: medium;
+  text-align: center;
+  color: #7b5544 ;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
 @media all and (min-width: 600px) {
 
   /*.main-menu ul {
@@ -262,9 +274,26 @@ label {
  
 /*タブレット用   600px以上〜*/
 @media all and (min-width: 600px) {
+
+.text br {
+    display: none;
+  }
  
 }
  
+@media only screen and (max-width: 500px) {
+  
+  .section br {
+    display: none;
+  }
+
+  .section2 br {
+    display: none;
+  }
+
+  .section { font: size 10px;}
+}
+
 /*コンピュータ用   1025px以上〜*/
 @media all and (min-width: 1025px) {
  
